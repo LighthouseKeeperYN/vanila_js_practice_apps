@@ -44,6 +44,7 @@ class Ui {
         }
     }
 
+    
     clearFields() {
         document.getElementById('author').value = '';
         document.getElementById('title').value = '';

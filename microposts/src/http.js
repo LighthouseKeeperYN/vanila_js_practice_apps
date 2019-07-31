@@ -16,7 +16,6 @@ class EasyHTTP {
 
     const resData = await response.json();
     return resData;
-
   }
 
   async put(url, data) {
@@ -33,7 +32,7 @@ class EasyHTTP {
   }
 
   async delete(url) {
-    const response = await fetch(url, {
+    await fetch(url, {
       method: 'DELETE',
       headers: {
         'Content-type': 'application/json'
@@ -43,7 +42,6 @@ class EasyHTTP {
     const resData = await 'Resource Deleted...';
     return resData;
   }
-
 }
 
 export const http = new EasyHTTP();
